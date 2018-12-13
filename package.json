@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/paigeegorry/project-server.git"
   },
-  "author": "",
+  "author": "paigeegorry",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/paigeegorry/project-server/issues"
@@ -30,6 +30,10 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.8"
+    "nodemon": "^1.18.8",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0"
   }
 }
