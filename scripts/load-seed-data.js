@@ -3,11 +3,11 @@ const client = require('../lib/db-client');
 const bcrypt = require('bcryptjs');
 
 client.query(`
-  INSERT INTO **TABLENAMEprofile** (username, hash)
+  INSERT INTO profile (username, hash)
   VALUES ($1, $2)
   RETURNING id;
 `,
-['martypdx', bcrypt.hashSync('abc123', 8)]
+['testygal', bcrypt.hashSync('abc123', 8)]
 )
   .then(
     () => console.log('seed data load complete'),
