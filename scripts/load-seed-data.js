@@ -7,7 +7,7 @@ client.query(`
   VALUES ($1, $2)
   RETURNING id;
 `,
-['martypdx', bcrypt.hashSync('abc123', 8)]
+['abelq16', bcrypt.hashSync('abc123', 8)]
 )
   .then(
     () => console.log('seed data load complete'),
