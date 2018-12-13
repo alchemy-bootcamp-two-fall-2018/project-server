@@ -1,3 +1,4 @@
+require('dotenv').config();
 const client = require('../lib/db-client');
 const bcrypt = require('bcryptjs');
 
@@ -6,7 +7,7 @@ client.query(`
   VALUES ($1, $2)
   RETURNING id;
 `,
-['martypdx', bcrypt.hashSync('abc123', 8)]
+['user1', bcrypt.hashSync('abc123', 8)]
 )
   .then(
     () => console.log('seed data load complete'),
