@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tylercorbett/project-server.git"
+    "url": "git+https://github.com/alchemy-bootcamp-two-fall-2018/project-server.git"
   },
-  "author": "thetylercorbett",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tylercorbett/project-server/issues"
+    "url": "https://github.com/alchemy-bootcamp-two-fall-2018/project-server/issues"
   },
-  "homepage": "https://github.com/tylercorbett/project-server#readme",
+  "homepage": "https://github.com/alchemy-bootcamp-two-fall-2018/project-server#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^6.2.0",
