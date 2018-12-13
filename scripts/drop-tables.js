@@ -1,5 +1,5 @@
-const client = require('../lib/db-client');
 require('dotenv').config(); 
+const client = require('../lib/db-client');
 
 client.query(`
 `)
