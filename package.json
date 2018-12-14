@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "exit 0",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
