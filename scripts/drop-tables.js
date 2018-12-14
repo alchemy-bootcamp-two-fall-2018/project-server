@@ -1,11 +1,16 @@
 require('dotenv').config();
 const client = require('../lib/db-client');
+const bcrypt = require('bcryptjs');
 
 client.query(`
-  DROP TABLE IF EXISTS profile;
-`)
+  INSERT INTO profile (username, hash)
+  VALUES ($1, $2)
+  RETURNING id;
+`,
+['martypdx', bcrypt.hashSync('abc123', 8)]
+)
   .then(
-    () => console.log('drop tables complete'),
+    () => console.log('seed data load complete'),
     err => console.log(err)
   )
   .then(() => {
