@@ -4,7 +4,7 @@
   "description": "Demo project server repo",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0",
+    "test": "npm run lint",
     "create-tables": "node scripts/create-table.js",
     "drop-tables": "node scripts/drop-table.js",
     "load-seed-data": "node scripts/load-seed-data.js",
