@@ -24,7 +24,7 @@
     "db-load-all": "npm run recreate-tables && npm run load-seed-data",
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "exit 0",
+    "test": "exit 0"
     "start": "nodemon server.js"
   },
   "repository": {
